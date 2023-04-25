@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NearbyPlaces</string>
+    <string name="nearby_place_list_screen">Places</string>
+    <string name="settings_screen">Settings</string>
+</resources>

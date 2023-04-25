@@ -1,0 +1,79 @@
+[versions]
+# Libraries - prod
+core-ktx = "1.10.0"
+appcompat = "1.6.1"
+lifecycle-runtime-ktx = "2.6.1"
+activity-compose = "1.7.1"
+compose-bom = "2023.04.01"
+ktor = "1.6.8"
+logback = "1.4.5"
+kotlinx-serialization = "1.5.0"
+compose-destinations = "1.9.41-beta"
+material = "1.8.0"
+coil = "2.3.0"
+secrets = "2.0.1"
+play-services = "18.1.0"
+compose-maps = "2.11.2"
+# Libraries - test
+mockk = "1.13.5"
+junit = "4.13.2"
+androidx-test-ext-junit = "1.1.5"
+espresso-core = "3.5.1"
+# Plugins
+com-android = "8.1.0-alpha11"
+org-jetbrains-kotlin = "1.8.20"
+ksp = "1.8.20-1.0.10"
+
+[libraries]
+# Android
+core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle-runtime-ktx" }
+activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activity-compose" }
+compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "compose-bom" }
+# UI
+ui = { group = "androidx.compose.ui", name = "ui" }
+ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+material = { group = "androidx.compose.material", name = "material" }
+material3 = { group = "androidx.compose.material3", name = "material3" }
+# Ktor-Client
+ktor-core = { group = "io.ktor", name = "ktor-client-core", version.ref = "ktor" }
+ktor-android = { group = "io.ktor", name = "ktor-client-android", version.ref = "ktor" }
+ktor-serialization = { group = "io.ktor", name = "ktor-client-serialization", version.ref = "ktor" }
+ktor-logging = { group = "io.ktor", name = "ktor-client-logging", version.ref = "ktor" }
+logback = { group = "ch.qos.logback", name = "logback-classic", version.ref = "logback" }
+# Serialization
+kotlinx-serialization = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
+#Compose Destinations (Navigation Library)
+compose-destinations = { group = "io.github.raamcosta.compose-destinations", name = "core", version.ref = "compose-destinations" }
+compose-destinations-animations = { group = "io.github.raamcosta.compose-destinations", name = "animations-core", version.ref = "compose-destinations" }
+compose-destinations-ksp = { group = "io.github.raamcosta.compose-destinations", name = "ksp", version.ref = "compose-destinations" }
+# Images
+coil = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
+# Maps
+google-maps-play = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "play-services" }
+google-maps = { group = "com.google.maps.android", name = "maps-compose", version.ref = "compose-maps" }
+google-maps-utils = { group = "com.google.maps.android", name = "maps-compose-utils", version.ref = "compose-maps" }
+google-maps-widgets = { group = "com.google.maps.android", name = "maps-compose-widgets", version.ref = "compose-maps" }
+
+# Testing
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+mockk = { group = "io.mockk", name = "mockk", version.ref = "mockk" }
+# UI Testing
+ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+
+[plugins]
+com-android-application = { id = "com.android.application", version.ref = "com-android" }
+com-android-library = { id = "com.android.library", version.ref = "com-android" }
+org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin" }
+org-jetbrains-kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "org-jetbrains-kotlin" }
+com-google-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+com-gradle-secrets = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "secrets"}
+
+[bundles]
+
