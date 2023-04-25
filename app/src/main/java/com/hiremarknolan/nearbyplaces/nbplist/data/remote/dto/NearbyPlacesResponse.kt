@@ -16,7 +16,6 @@ data class NearbyPlace(
     val name: String
 ) {
     fun getUrl(): String ="https://foursquare.com/v/" + this.fsq_id
-
 }
 
 @Serializable

@@ -6,7 +6,6 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material.MaterialTheme
 import androidx.compose.material.MaterialTheme.colors
 import androidx.compose.material.MaterialTheme.typography
 import androidx.compose.material.Text
@@ -27,7 +26,11 @@ fun TopSheet(title: String, url: String, subtitle: String? = null, onClick: () -
         verticalAlignment = Alignment.CenterVertically
     ) {
         Column(Modifier.weight(1f)) {
-            if (subtitle.isNullOrBlank()) Text(title, style = typography.h1, color = colors.onPrimary)
+            if (subtitle.isNullOrBlank()) Text(
+                title,
+                style = typography.h1,
+                color = colors.onPrimary
+            )
             else {
                 Text(title, style = typography.h2, color = colors.onPrimary)
                 Text(subtitle, style = typography.h4, color = colors.onPrimary)

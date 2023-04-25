@@ -14,6 +14,7 @@ coil = "2.3.0"
 secrets = "2.0.1"
 play-services = "18.1.0"
 compose-maps = "2.11.2"
+voyager = "1.0.0-rc04"
 # Libraries - test
 mockk = "1.13.5"
 junit = "4.13.2"
@@ -49,6 +50,13 @@ kotlinx-serialization = { group = "org.jetbrains.kotlinx", name = "kotlinx-seria
 compose-destinations = { group = "io.github.raamcosta.compose-destinations", name = "core", version.ref = "compose-destinations" }
 compose-destinations-animations = { group = "io.github.raamcosta.compose-destinations", name = "animations-core", version.ref = "compose-destinations" }
 compose-destinations-ksp = { group = "io.github.raamcosta.compose-destinations", name = "ksp", version.ref = "compose-destinations" }
+#Voyager (Navigation Library)
+voyager-navigator = { group = "cafe.adriel.voyager", name = "voyager-navigator", version.ref = "voyager" }
+voyager-navigator-tab = { group = "cafe.adriel.voyager", name = "voyager-tab-navigator", version.ref = "voyager" }
+voyager-navigator-bottomsheet = { group = "cafe.adriel.voyager", name = "voyager-bottom-sheet-navigator", version.ref = "voyager" }
+voyager-transitions = { group = "cafe.adriel.voyager", name = "voyager-transitions", version.ref = "voyager" }
+voyager-androidx = { group = "cafe.adriel.voyager", name = "voyager-androidx", version.ref = "voyager" }
+
 # Images
 coil = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
 # Maps

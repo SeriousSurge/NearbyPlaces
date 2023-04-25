@@ -11,21 +11,24 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.hiremarknolan.nearbyplaces.core.viewmodel.viewModel
-import com.ramcosta.composedestinations.annotation.Destination
+import cafe.adriel.voyager.core.screen.Screen
 
-@Destination
+object SettingsScreen : Screen {
+    @Composable
+    override fun Content() {
+        SettingsScreen()
+    }
+}
+
 @Composable
-fun SettingsScreen(
-    viewModel: SettingsViewModel = viewModel()
-) {
+fun SettingsScreen() {
     Column(
         modifier = Modifier
             .padding(16.dp)
             .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text(text = viewModel.title, style = typography.h3)
+        Text(text = "Settings", style = typography.h3)
         Spacer(modifier = Modifier.height(16.dp))
         Text(text = "This is a sample Settings screen", style = typography.body1)
     }

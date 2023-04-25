@@ -12,7 +12,6 @@ import androidx.compose.ui.platform.LocalContext
 @Composable
 fun ShareButton(url: String, name: String? = null) {
 
-    //todo get this part out of the screen layer
     val sendIntent: Intent = Intent().apply {
         action = Intent.ACTION_SEND
         putExtra(Intent.EXTRA_TEXT, url)
@@ -21,6 +20,7 @@ fun ShareButton(url: String, name: String? = null) {
         }
         type = "text/plain"
     }
+
     val shareIntent = Intent.createChooser(sendIntent, null)
     val context = LocalContext.current
 

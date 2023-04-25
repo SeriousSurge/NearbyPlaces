@@ -1,9 +1,6 @@
-# Nearby Places - Experiments with Compose-Destinations and Voyager
+# Nearby Places - Experiments with Voyager
 
 Playing with navigation libraries I decided to build a demonstration app to try them out.
-
-This is the result of this experiment, The Voyager variant can be found on a branch.
-
 
 ## Screenshots
 
@@ -22,12 +19,14 @@ https://developers.google.com/maps/documentation/android-sdk/cloud-setup
 
 From here it should be possible to build and run the project
 
+To customize the root location you can modify 'PLACES_NEARBY_TO'
+
 ## Libraries
 
 We use the following Libraries in this project
 
-#### Compose destinations - https://github.com/raamcosta/compose-destinations
-This is used as a wrapper for the compose NavGraph as it drastically simplifies the navigation code and replaces it with easy to parse annotations.
+#### Voyager - https://github.com/adrielcafe/voyager
+This is a replacement for the compose navigation scheme, Big complexity reductions and pure kotlin so supports KMM
 
 ####  Ktor  - https://github.com/ktorio/ktor
 Used here instead of OkHttp/Retrofit as it would allow using this as a KMM project

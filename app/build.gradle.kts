@@ -75,9 +75,15 @@ dependencies {
 
     implementation(libs.kotlinx.serialization)
 
-    ksp(libs.compose.destinations.ksp)
-    implementation(libs.compose.destinations)
-    implementation(libs.compose.destinations.animations)
+//    ksp(libs.compose.destinations.ksp)
+//    implementation(libs.compose.destinations)
+//    implementation(libs.compose.destinations.animations)
+
+    implementation(libs.voyager.navigator)
+    implementation(libs.voyager.navigator.tab)
+    implementation(libs.voyager.navigator.bottomsheet)
+    implementation(libs.voyager.transitions)
+    implementation(libs.voyager.androidx)
 
     implementation(libs.coil)
 
